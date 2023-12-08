@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Testo</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="../Depedencies/fontawesome-free-6.4.0-web/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../Depedencies/fontawesome-free-6.4.0-web/css/brands.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../Depedencies/fontawesome-free-6.4.0-web/css/fontawesome.css"
+    <script src="Contact.js"></script>
+    <link rel="stylesheet" href="Contact.css" />
+    <link
+      rel="stylesheet"
+      href="../Depedencies/bootstrap-5.3.0-dist/css/bootstrap.css"
+    />
+    <script src="../Depedencies/bootstrap-5.3.0-dist/js/bootstrap.js"></script>
+    <link
+      rel="stylesheet"
+      href="../Depedencies/bootstrap-icons-1.10.5/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <a href="../Index.html" class="logo">Ridho Website</a>
+      <div class="header-right">
+        <a class="active" href="../Index.html"
+          ><i class="fas fa-home" style="color: white"></i> Home</a
+        >
+        <a href="../About/about.html"><i class="far fa-id-card"></i> About</a>
+        <a href="../Contact/Contact.html"
+          ><i class="fas fa-address-book"></i> Contact</a
+        >
+
+        <a href="../Gallery/Gallery.html"><i class="far fa-images"></i> Gallery</a>
+      </div>
+    </div>
+    <section id="contact">
+      <h1 class="section-header">Contact</h1>
+
+      <div class="contact-wrapper">
+        <!-- Left contact page -->
+
+        <form
+          id="contact-form"
+          class="form-horizontal"
+          role="form"
+          action="../done.txt"
+        >
+          <div class="form-group">
+            <div class="col-sm-12">
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="NAME"
+                name="name"
+                value=""
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-sm-12">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="EMAIL"
+                name="email"
+                value=""
+                required
+              />
+            </div>
+          </div>
+
+          <textarea
+            class="form-control"
+            rows="10"
+            placeholder="MESSAGE"
+            name="message"
+            required
+          ></textarea>
+
+          <button
+            class="btn btn-primary send-button"
+            id="submit"
+            type="submit"
+            value="SEND"
+          >
+            <div class="alt-send-button">
+              <i class="fa fa-paper-plane"></i
+              ><span class="send-text">SEND</span>
+            </div>
+          </button>
+        </form>
+
+        <!-- Left contact page -->
+
+        <div class="direct-contact-container">
+          <ul class="contact-list">
+            <li class="list-item">
+              <i class="fa fa-map-marker fa-2x"
+                ><span class="contact-text place">Bogor, Jawa barat</span></i
+              >
+            </li>
+
+            <li class="list-item">
+              <i class="fa fa-phone fa-2x"
+                ><span class="contact-text phone"
+                  ><a href="tel:1-212-555-5555" title="Give me a call"
+                    >(62) 812-9141-7962</a
+                  ></span
+                ></i
+              >
+            </li>
+
+            <li class="list-item">
+              <i class="fa fa-envelope fa-2x"
+                ><span class="contact-text gmail"
+                  ><a href="mailto:#" title="Send me an email"
+                    >Ridhog227@gmail.com</a
+                  ></span
+                ></i
+              >
+            </li>
+          </ul>
+
+          <hr />
+          <ul class="social-media-list">
+            <li>
+              <a href="#" target="_blank" class="contact-icon">
+                <i class="bi-github" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="contact-icon">
+                <i class="bi-facebook" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="contact-icon">
+                <i class="bi-twitter" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="contact-icon">
+                <i class="bi-instagram" aria-hidden="true"></i
+              ></a>
+            </li>
+          </ul>
+          <hr />
+
+          <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <h3>Muhammad Ridho</h3>
+        <p>
+          Disini kamu dapat menemukan beberapa article yang sudah terkoneksi
+          langsung ke internet dan beberapa gallery dengan gambar yang unik serta
+          informasi lainnya.
+        </p>
+        <ul class="socials">
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>copyright &copy; <a href="../Index.html">Ridho Website</a></p>
+        <div class="footer-menu">
+          <ul class="f-menu">
+            <li><a href="../Index.html">Home</a></li>
+            <li><a href="../About/about.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="../Gallery/Gallery.html">Gallery</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

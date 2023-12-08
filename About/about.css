@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: auto;
+  height: 700px;
+  margin: auto;
+}
+
+.photo {
+  background-color: white;
+  position: relative;
+  display: inline-flex;
+  padding-top: 110px;
+  justify-content: center;
+}
+.poto-text {
+  font-family: "Varela Round", sans-serif;
+  margin-top: 350px;
+  position: absolute;
+}
+
+.photo img {
+  width: 420px;
+  height: 350px;
+  object-fit: cover;
+  box-shadow: 10px 15px 25px 0 rgba(0, 0, 0, 0.2);
+  display: block;
+  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  margin-top: -10px;
+}
+
+.photo:hover img {
+  box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.photo:hover img,
+.photo:hover .glow-wrap {
+  margin-top: 0;
+}
+.bahasa-fav {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+}
+.content {
+  padding-top: 60px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+.content h2 {
+  font-family: "Varela Round", sans-serif;
+  text-transform: uppercase;
+  font-size: 36px;
+  letter-spacing: 6px;
+  opacity: 0.9;
+}
+.content span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 0.5px;
+  width: 60%;
+  background: #777;
+  margin: 30px auto;
+}
+.content p {
+  font-family: "Varela Round", sans-serif;
+  padding-bottom: 15px;
+  font-weight: 400;
+  opacity: 0.7;
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 1.7;
+  color: #ffffff;
+}
+.links {
+  position: relative;
+  display: flex;
+  margin-top: 30px;
+  margin-right: 18px;
+  justify-content: center;
+  align-items: center;
+}
+.links li {
+  margin-right: 20px;
+  list-style: none;
+  width: 160px;
+  height: 50px;
+}
+
+.links li a {
+  font-family: "Varela Round", sans-serif;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  padding: 13px;
+  height: 50px;
+  border: 2px solid #777;
+  list-style: none;
+  border-radius: 5px;
+  text-align: center;
+  justify-content: center;
+}
+.links li a:hover {
+  border-color: white;
+}
+
+/*****************/
+
+@media (max-width: 900px) {
+  section {
+    grid-template-columns: 1fr;
+    width: 100%;
+    border-radius: none;
+  }
+  .image {
+    height: 100vh;
+    border-radius: none;
+  }
+  .content {
+    height: 100vh;
+    border-radius: none;
+  }
+  .content h2 {
+    font-size: 20px;
+    margin-top: 50px;
+  }
+  .content span {
+    margin: 20px 0;
+  }
+  .content p {
+    font-size: 14px;
+  }
+  .links li a {
+    font-size: 14px;
+  }
+  .links {
+    margin: 5px 0;
+  }
+  .links li {
+    padding: 6px 10px;
+  }
+  .icons li i {
+    font-size: 15px;
+  }
+}
+.gemu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f1f1;
+  font-family: "Varela Round", sans-serif;
+  height: 130px;
+}
+:root {
+  --color: black;
+  --transition-time: 0.5s;
+}
+
+.kontener-baru {
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  margin: auto;
+}
+
+.cards-wrapper {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 6rem;
+  padding: 4rem;
+  margin: auto;
+  height: auto;
+  width: max-content;
+}
+
+.card {
+  font-family: "Varela Round", sans-serif;
+  --bg-filter-opacity: 0.5;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, var(--bg-filter-opacity)),
+      rgba(0, 0, 0, var(--bg-filter-opacity))
+    ),
+    var(--bg-img);
+  height: 20em;
+  width: 15em;
+  font-size: 1.5em;
+  color: white;
+  border-radius: 1em;
+  padding: 1em;
+  /*margin: 2em;*/
+  display: flex;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 5em -1em black;
+  transition: all, var(--transition-time);
+  position: relative;
+  overflow: hidden;
+  border: 10px solid black;
+  text-decoration: none;
+}
+
+.card:hover {
+  transform: rotate(0);
+}
+
+.card h1 {
+  margin: 0;
+  font-size: 1.5em;
+  line-height: 1.2em;
+  font-family: "Varela Round", sans-serif;
+}
+
+.card p {
+  font-size: 0.75em;
+  font-family: "Varela Round", sans-serif;
+  margin-top: 0.5em;
+  line-height: 2em;
+}
+
+.card .tags {
+  font-family: "Varela Round", sans-serif;
+  display: flex;
+}
+
+.card .tags .tag {
+  font-size: 0.75em;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 0.3rem;
+  padding: 0 0.5em;
+  margin-right: 0.5em;
+  line-height: 1.5em;
+  transition: all, var(--transition-time);
+}
+
+.card:hover .tags .tag {
+  background: var(--color);
+  color: white;
+}
+
+.card .date {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 0.75em;
+  padding: 1em;
+  line-height: 1em;
+  opacity: 0.8;
+}
+
+.card:before,
+.card:after {
+  content: "";
+  transform: scale(0);
+  transform-origin: top left;
+  border-radius: 50%;
+  position: absolute;
+  left: -50%;
+  top: -50%;
+  z-index: -5;
+  transition: all, var(--transition-time);
+  transition-timing-function: ease-in-out;
+}
+
+.card:before {
+  background: #ddd;
+  width: 250%;
+  height: 250%;
+}
+
+.card:after {
+  background: white;
+  width: 200%;
+  height: 200%;
+}
+
+.card:hover :nth-child(1) {
+  color: var(--color);
+}
+
+.card:hover:before,
+.card:hover:after {
+  transform: scale(1);
+}
